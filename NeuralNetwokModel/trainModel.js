@@ -1,6 +1,6 @@
 const tf = require("@tensorflow/tfjs");
 const w = require("@tensorflow/tfjs-node");
-const data = require("../../trainingData.json");
+const data = require("./trainingData.json");
 
 const getGameData = function () {
     return data.game;
