@@ -305,7 +305,7 @@ function generateRandomUnionArrayWithMutation(p1, p2) {
         }
 
         // Mutation
-        x = Math.floor(Math.random() * 100) % mutationRate; // Mutation rate is 10% (out of 10 numbers, only 1 will change) . So i took mod by by 10 and then check if the number is 1. The number will be 1 with the probablitiy of 1/10;
+        x = Math.floor(Math.random() * 100) % (100 / mutationRate); // Mutation rate is 10% (out of 10 numbers, only 1 will change) . So i took mod by by 10 and then check if the number is 1. The number will be 1 with the probablitiy of 1/10;
 
         if (x == 1) {
             var y = ((Math.random(0, 1) * 100) % mutationChange) / 100; // Determines how much to increase the number in the range of factor of [-1.2, 1.2]
